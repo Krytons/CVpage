@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/timeline.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -26,39 +29,25 @@
             <div id="dismiss">
                 <i class="fas fa-arrow-left"></i>
             </div>
-
-            <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+            <div class="sidebar-header mt-5">
+                <img src="{{ asset('images/Me.jpg') }}" class="img-fluid" alt="...">
+                <h5 class="mt-2">Bartolomeo Caruso</h5>
+                <p>Titolo di studio</p>
             </div>
 
             <ul class="list-unstyled components">
                 <p>Dummy Heading</p>
                 <li class="active">
-                    <a class="aCollapsive" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                    <a class="aCollapsive" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">My socials</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="#">Home 1</a>
+                            <a href="#">GitHub</a>
                         </li>
                         <li>
-                            <a href="#">Home 2</a>
+                            <a href="#">Linkedin</a>
                         </li>
                         <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                    <a class="aCollapsive" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
+                            <a href="{{ route('home') }}">Other Home</a>
                         </li>
                     </ul>
                 </li>
@@ -68,9 +57,26 @@
                 <li>
                     <a href="#">Contact</a>
                 </li>
+                <li>
+                    <a href="#">About Me</a>
+                    <a class="aCollapsive" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">My Projects</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">My Timeline</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 
+        <!-- Dark Overlay element -->
+        <div class="overlay"></div>
         <!-- Page Content -->
         <div id="content">
 
@@ -81,11 +87,89 @@
                         <i class="fas fa-align-left"></i>
                         <span>Toggle Sidebar</span>
                     </button>
+
+                    
+
                 </div>
             </nav>
+            
+            <!-- TIMELINE -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-timeline4">
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <span class="year">2015</span>
+                                    <div class="inner-content">
+                                        <h3 class="title">Web Designer</h3>
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <span class="year">2016</span>
+                                    <div class="inner-content">
+                                        <h3 class="title">Web Developer</h3>
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <span class="year">2017</span>
+                                    <div class="inner-content">
+                                        <h3 class="title">Web Designer</h3>
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <span class="year">2018</span>
+                                    <div class="inner-content">
+                                        <h3 class="title">Web Developer</h3>
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <span class="year">2019</span>
+                                    <div class="inner-content">
+                                        <h3 class="title">Web Developer</h3>
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <a href="#" class="timeline-content">
+                                    <span class="year">2020</span>
+                                    <div class="inner-content">
+                                        <h3 class="title">Web Developer</h3>
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <!-- Dark Overlay element -->
-        <div class="overlay"></div>
     </div>
 </body>
 

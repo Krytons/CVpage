@@ -20,7 +20,7 @@ function activateNavigation(){
         console.log(element);
         element.attr("aria-expanded", "false");
     }
-    docContent.classList.remove("hidden");
+    //docContent.classList.remove("hidden");
 }
 
 function closeNavigation(){
@@ -28,7 +28,7 @@ function closeNavigation(){
     docSidebar.classList.remove("active");
     //Hide overlay
     docOverlay.classList.add("active");
-    docContent.classList.add("hidden");
+    //docContent.classList.add("hidden");
 }
 
 
