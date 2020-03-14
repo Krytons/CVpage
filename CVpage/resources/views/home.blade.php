@@ -13,6 +13,7 @@
     <!-- Our Custom CSS -->
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
     <link href="{{ asset('css/timeline.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/section.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <!-- Font Awesome JS -->
@@ -36,8 +37,21 @@
             </div>
 
             <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
                 <li class="active">
+                    <a class="aCollapsive" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">About me</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Timeline</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
                     <a class="aCollapsive" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">My socials</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
@@ -52,25 +66,10 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Portfolio</a>
+                    <a href="#prglng">Skills</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a href="#">About Me</a>
-                    <a class="aCollapsive" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">My Projects</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">My Timeline</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
+                    <a href="#">Contact me</a>
                 </li>
             </ul>
         </nav>
@@ -93,9 +92,11 @@
                 </div>
             </nav>
             
-            <!-- TIMELINE -->
             <div class="container">
-                <div class="row">
+
+                <!-- TIMELINE -->
+                <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="time-section">
+                <div class="row w-100">
                     <div class="col-md-12">
                         <div class="main-timeline4">
                             <div class="timeline">
@@ -167,7 +168,44 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                </section>
+                
+            </div> <!-- end Container -->
+            <hr class="m-0">
+
+            <div class="container-fluid">
+                <!-- SKILLS -->
+                <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="time-section">
+                <div class="row w-100" id="prglng">
+                    <div>PROGRAMMING LANGUAGES: 
+                        <ul class="list-inline dev-icons" id="listprg">
+                            <li class="list-inline-item">
+                                <i class="fab fa-html5"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fab fa-css3-alt"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fab fa-js-square"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fab fa-angular"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fab fa-node-js"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fab fa-npm"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fab fa-java"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </section>
+
+            </div> <!-- end Container -->
 
         </div>
     </div>

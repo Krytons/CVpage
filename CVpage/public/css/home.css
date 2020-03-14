@@ -130,3 +130,15 @@ ul ul a {
     display: none;
 }
 
+#prglng{
+    font-size: 48px;
+    padding-left: 5px;
+}
+
+#listprg{
+    color: gray;
+}
+
+.list-inline-item i:hover{
+    color:blue;
+}
