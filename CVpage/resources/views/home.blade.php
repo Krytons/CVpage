@@ -42,16 +42,16 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Timeline</a>
+            <a class="nav-link js-scroll-trigger" href="#timeline">Timeline</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Skills</a>
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Interests</a>
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
             </li>
         </ul>
         </div>
@@ -61,8 +61,37 @@
         <div id="content">
             <div class="container">
 
+                 <!-- ABOUT ME -->
+                <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+                <div class="w-100">
+                    <h1 class="mb-0">Bartolomeo
+                    <span class="text-primary">Caruso</span>
+                    </h1>
+                    <div class="subheading mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor: 
+                    <a href="mailto:Loremipsum@email.com"> Loremipsum@email.com</a>
+                    </div>
+                    <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.</p>
+                    <div id="listsocial">Contact me: 
+                        <ul class="list-inline social-icons ml-1">
+                            <li class="list-inline-item">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fab fa-github"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fab fa-facebook"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </section>
+
                 <!-- TIMELINE -->
-                <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="time-section">
+                <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="timeline">
                 <div class="row w-100">
                     <div class="col-md-12">
                         <div class="main-timeline4">
@@ -140,7 +169,7 @@
                 <hr class="m-0">
 
                 <!-- SKILLS -->
-                <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="time-section">
+                <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
                 <div class="row w-100" id="prglng">
                     <div>PROGRAMMING LANGUAGES: 
                         <ul class="list-inline dev-icons" id="listprg">

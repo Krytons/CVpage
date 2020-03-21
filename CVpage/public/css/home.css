@@ -91,6 +91,15 @@ ul ul a {
     color: gray;
 }
 
+#listsocial{
+    color: black;
+    font-size: 24px;
+}
+
 .list-inline-item i:hover{
     color:blue;
+}
+
+.text-primary{
+    color: blue;
 }
